@@ -55,9 +55,11 @@
   
   .hero {
     display: flex;
+      flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
     padding: 60px 8px;
+      gap:20px;
     
     
     
@@ -806,5 +808,94 @@ top: 1000px;
   .footer-bottom a {
     text-decoration: none;
     color: inherit;
+  }
+}
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .Ellipse,
+  .Vector {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .search-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .search-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .things-cards,
+  .deals-grid,
+  .vacation-grid,
+  .blog-grid,
+  .footer-container,
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .right, .left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+}
+
+/* Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .search-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .search-item {
+    min-width: 45%;
   }
 }
