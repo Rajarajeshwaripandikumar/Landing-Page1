@@ -1,19 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  /* Travel Agency Landing Page */
-
 
     body {
-      font-family: 'Inter', sans-serif;
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
       background-color: #fffdfb;
       position: relative;
       color: #222;
-      width: 1920px;
-      height: 5875px;
+      width: 100%;
+      height: auto;
   
 
    .navbar {
