@@ -811,7 +811,7 @@ top: 1000px;
   }
 }
 /* Mobile (up to 600px) */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hero {
     flex-direction: column;
     padding: 20px;
